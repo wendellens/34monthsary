@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Florelyn ❤️ | October 3</title>
+  <meta name="description" content="A little love story made for Florelyn." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hearts"></div>
+  <div class="noise"></div>
+
+  <!-- PAGE 1: DATE QUESTION -->
+  <section id="gateDate" class="gate-screen active">
+    <div class="gate-orb"></div>
+    <div class="gate-card reveal visible">
+      <div class="gate-icon">♡</div>
+      <span class="section-kicker">BEFORE OUR STORY BEGINS</span>
+      <h1>When did we officially<br><span>become us?</span></h1>
+      <p class="gate-sub">Pick the date we officially became boyfriend and girlfriend.</p>
+
+      <div class="calendar">
+        <div class="calendar-head">
+          <button class="month-arrow" disabled>‹</button>
+          <div>
+            <strong>December 2023</strong>
+            <small>Our beginning</small>
+          </div>
+          <button class="month-arrow" disabled>›</button>
+        </div>
+        <div class="weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span>
+          <span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div id="calendarDays" class="calendar-days"></div>
+      </div>
+
+      <p id="dateHint" class="hint">Choose a date above ♡</p>
+      <button id="dateContinue" class="primary-btn gate-btn" disabled>That's our date ♡</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2: PET NAMES -->
+  <section id="gateNames" class="gate-screen">
+    <div class="gate-orb"></div>
+    <div class="gate-card reveal visible">
+      <div class="gate-icon">💗</div>
+      <span class="section-kicker">ONE MORE QUESTION</span>
+      <h1>What do we<br><span>call each other?</span></h1>
+      <p class="gate-sub">You already know the answer… don't you? Hehehe.</p>
+
+      <div class="nickname-input-wrap">
+        <input id="nicknameInput" class="nickname-input" type="text"
+               placeholder="Type what we call each other..." autocomplete="off" />
+        <span class="input-heart">♡</span>
+      </div>
+      <p id="nameHint" class="hint">Type our special name for each other ♡</p>
+      <button id="namesContinue" class="primary-btn gate-btn" disabled>That's what we call each other ♡</button>
+    </div>
+  </section>
+
+  <!-- MAIN LOVE STORY -->
+  <main id="main" class="hidden">
+    <div class="story-progress">
+      <span class="active"></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <section id="welcome" class="section intro hero-story">
+      <div class="section-inner reveal">
+        <span class="section-kicker">OUR LITTLE WORLD</span>
+        <h2>It started <em>online</em>…<br>and somehow became <span>us.</span></h2>
+        <p>
+          December 3, 2023 — the date everything became official.
+          Two years and ten months later, I still get that same warm feeling
+          whenever I think about you. And the most unforgettable part?
+          Finally getting to see you and be with you, even if it was only for one week.
+        </p>
+        <div class="date-pill">♡ December 03, 2023 → October 03, 2026 ♡</div>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="section-inner">
+        <span class="section-kicker">OUR STORY</span>
+        <h2>A tiny timeline of <span>us</span></h2>
+        <div class="timeline-list">
+          <article class="timeline-item reveal">
+            <div class="dot">♡</div>
+            <div class="card">
+              <small>DECEMBER 03, 2023</small>
+              <h3>The day we became official.</h3>
+              <p>From an online connection to something we could finally call ours.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="dot">♡</div>
+            <div class="card">
+              <small>THE MEMORY I TREASURE</small>
+              <h3>That one week together.</h3>
+              <p>Getting to actually see you and be beside you—even for just one week—is one of the memories I treasure the most.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="dot">♡</div>
+            <div class="card">
+              <small>OCTOBER 03, 2026</small>
+              <h3>2 years &amp; 10 months.</h3>
+              <p>And here we are. Still choosing each other, still making memories, still being us.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLIP CARDS -->
+    <section class="section flip-section">
+      <div class="section-inner center">
+        <span class="section-kicker">TURN THE PAGE</span>
+        <h2>Flip our <span>memories.</span></h2>
+        <p class="section-note">Tap or click a card. A different photo is waiting on the other side. ♡</p>
+
+        <div class="flip-grid">
+          <button class="flip-card reveal" aria-label="Flip memory card">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <img src="images/memory-1.jfif" alt="Memory 1">
+                <div class="flip-label">MEMORY I ♡<small>tap to flip</small></div>
+              </div>
+              <div class="flip-face flip-back">
+                <img src="images/memory-2.jfif" alt="Memory 2">
+                <div class="flip-label">ANOTHER LITTLE MOMENT ♡</div>
+              </div>
+            </div>
+          </button>
+
+          <button class="flip-card reveal" aria-label="Flip memory card">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <img src="images/memory-3.jfif" alt="Memory 3">
+                <div class="flip-label">YOUR SMILE ♡<small>tap to flip</small></div>
+              </div>
+              <div class="flip-face flip-back">
+                <img src="images/memory-4.jfif" alt="Memory 4">
+                <div class="flip-label">ALWAYS BEAUTIFUL ♡</div>
+              </div>
+            </div>
+          </button>
+
+          <button class="flip-card reveal" aria-label="Flip memory card">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <img src="images/memory-5.jfif" alt="Memory 5">
+                <div class="flip-label">SIMPLE MOMENTS ♡<small>tap to flip</small></div>
+              </div>
+              <div class="flip-face flip-back">
+                <img src="images/memory-6.jfif" alt="Memory 6">
+                <div class="flip-label">WORTH KEEPING ♡</div>
+              </div>
+            </div>
+          </button>
+
+          <button class="flip-card reveal" aria-label="Flip memory card">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <img src="images/memory-7.jfif" alt="Memory 7">
+                <div class="flip-label">MORE OF US ♡<small>tap to flip</small></div>
+              </div>
+              <div class="flip-face flip-back">
+                <img src="images/memory-8.jfif" alt="Memory 8">
+                <div class="flip-label">ONE MORE MEMORY ♡</div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories">
+      <div class="section-inner">
+        <span class="section-kicker">OUR MEMORIES</span>
+        <h2>Little moments I want to <span>keep forever.</span></h2>
+        <p class="section-note">Tap any photo to make it bigger.</p>
+        <div class="gallery">
+          <figure class="photo-card tall reveal" data-caption="A little piece of us ♡"><img src="images/memory-2.jfif" alt="Memory"><figcaption>♡</figcaption></figure>
+          <figure class="photo-card reveal" data-caption="One of my favorite memories with you."><img src="images/memory-1.jfif" alt="Memory"><figcaption>Us.</figcaption></figure>
+          <figure class="photo-card reveal" data-caption="Your smile will always be one of my favorite things."><img src="images/memory-3.jfif" alt="Memory"><figcaption>Your smile ♡</figcaption></figure>
+          <figure class="photo-card tall reveal" data-caption="A memory I never want to forget."><img src="images/memory-4.jfif" alt="Memory"><figcaption>Always.</figcaption></figure>
+          <figure class="photo-card reveal" data-caption="Even the simple moments mean so much to me."><img src="images/memory-5.jfif" alt="Memory"><figcaption>Simple moments.</figcaption></figure>
+          <figure class="photo-card reveal" data-caption="Thank you for being part of my life."><img src="images/memory-6.jfif" alt="Memory"><figcaption>Thank you.</figcaption></figure>
+          <figure class="photo-card wide reveal" data-caption="More memories, more stories, more us."><img src="images/memory-7.jfif" alt="Memory"><figcaption>More of us ♡</figcaption></figure>
+          <figure class="photo-card reveal" data-caption="A moment worth keeping."><img src="images/memory-8.jfif" alt="Memory"><figcaption>Worth keeping.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reasons">
+      <div class="section-inner center">
+        <span class="section-kicker">A LITTLE SECRET</span>
+        <h2>Why do I love you?</h2>
+        <p>There are too many reasons. But let's start with a few.</p>
+        <button id="heartBtn" class="big-heart" aria-label="Reveal a reason">♥</button>
+        <div id="reasonText" class="reason-text">Tap my heart ♡</div>
+        <div class="reason-count"><span id="reasonCount">0</span> / ∞</div>
+      </div>
+    </section>
+
+    <section class="section letter">
+      <div class="section-inner center">
+        <span class="section-kicker">FOR YOU</span>
+        <h2>I wrote you <span>a letter.</span></h2>
+        <p class="section-note">Tap the envelope.</p>
+        <button id="envelopeBtn" class="envelope-wrap" aria-label="Open love letter">
+          <div class="envelope"><div class="flap"></div><div class="letter-paper">♡</div><div class="seal">♡</div></div>
+        </button>
+        <article id="letterCard" class="letter-card">
+          <p>Happy Monthsary sa atin, baebieee. ❤️</p>
+          <p>Alam ko galit ka ngayon at nagtatampo ka sa'kin ngayon, but that's how I show my love to you hehehe. I'm sorry again, baebieee, sa mga katarantaduhan na ginagawa ko hehehe.</p>
+          <p>I love you, baebieee. Mahal na mahal kita palagi and sobraaaaa. Gusto ko lang din sabihin sa'yo na ingatan mo palagi ang sarili mo d'yan at wag mo pabayaan sarili mo.</p>
+          <p>Tandaan mo din palagi na mahal na mahal kita palagi.</p>
+          <p class="signature">I love you, baebieee. ❤️<br>Happy Monthsary sa atin.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section song">
+      <div class="section-inner center song-box reveal">
+        <div class="vinyl">♪</div>
+        <span class="section-kicker">OUR SONG</span>
+        <h2>“Araw-Araw” <span>♡</span></h2>
+        <p>Ben&amp;Ben</p>
+        <p class="section-note">I picked this because the feeling of choosing someone day after day fits the story I want this website to tell.</p>
+        <a class="primary-btn link-btn" href="https://www.youtube.com/results?search_query=Ben%26Ben+Araw-Araw" target="_blank" rel="noopener noreferrer">Play Our Song ♪</a>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="section-inner center">
+        <span class="section-kicker">ONE LAST THING</span>
+        <h2>Before you leave…</h2>
+        <p class="final-line">I would choose you again.</p>
+        <p class="final-small">Today. Tomorrow. And every little monthsary after this.</p>
+
+        <div class="final-photo-frame reveal">
+          <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+          <img src="images/memory-9.jfif" alt="Our final memory" />
+          <div class="photo-overlay"><span>Florelyn ♡</span><small>my favorite person</small></div>
+        </div>
+
+        <p class="final-message">Thank you for being part of my life.<br><strong>Mahal na mahal kita. ❤️</strong></p>
+        <button id="fireworkBtn" class="primary-btn">One More Surprise ✨</button>
+      </div>
+    </section>
+    <footer>Made with too much love ♡ · October 3, 2026</footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
